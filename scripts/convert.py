@@ -204,7 +204,7 @@ def main():
     os.makedirs(output_model_folder, exist_ok=True)
 
     from_pretrained_kwargs = dict(
-        trust_remote_code=conv_args.trust_remote_code,
+        trust_remote_code=True,
     )
 
     # Saving the model config
